@@ -1,6 +1,6 @@
 variable "region" {
   description = "The AWS region to use"
-  default     = "us-east-1"
+  default     = "us-west-2"
 }
 
 variable "ami" {
@@ -20,24 +20,11 @@ variable "key_name" {
   description = "The name of the key pair to use for SSH access"
 }
 
-variable "vpc_name" {
-  description = "The name of the VPC"
-  default     = "my-vpc"
-}
-
-variable "subnet_name" {
-  description = "The name of the subnet"
-  default     = "my-subnet"
-}
-
-variable "availability_zone" {
-  description = "The availability zone to launch the subnet in"
-}
-
 variable "security_group_name" {
   description = "The name of the security group"
   default     = "my-security-group"
 }
+
 
 #variable "instance_name" {
 #  description = "The name of the EC2 instance"
